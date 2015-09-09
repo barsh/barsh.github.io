@@ -1,0 +1,6 @@
+<script>
+  if (document.location.search === '?' || document.location.search === '')
+    console.error('invalid url: expects redirectFromWord.htm?{url}')
+  else
+    document.location.assign(document.location.search.substr(1) + document.location.hash)
+</script>
